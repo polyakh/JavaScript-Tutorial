@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div   id="myDiv"
+       tabindex="0">
+    <input type="radio" name="gender" value="male" checked> Male<br>
+    <input type="radio" name="gender" value="female"> Female<br>
+    <input type="radio" name="gender" value="other"> Other
+</div>
+</body>
+
+<script>
+    document.querySelector("input[checked]"); // с такой записью мы работаем с разметкой, и получим input с атрибутом checked который был задан изначально, хотя у нас может быть выбран другой input
+    document.querySelector("input:checked"); // получим выбранные input в данной группе, изначальный атрибут в нашей разметке не будет назначает input который мы выбрали
+</script>
+</html>
